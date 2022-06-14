@@ -5,8 +5,8 @@ import java.util.Date;
 public class Servico {
     private Date data;
     private double preco;
-private TipoServico tipoServico;
-private Espaco espaco;
+    private TipoServico tipoServico;
+    private final Espaco espaco;
 
     public Servico(Date data, double preco, TipoServico tipoServico, Espaco espaco) {
         this.data = data;
@@ -41,9 +41,5 @@ private Espaco espaco;
 
     public Espaco getEspaco() {
         return espaco;
-    }
-
-    public void setEspaco(Espaco espaco) {
-        this.espaco = espaco;
     }
 }

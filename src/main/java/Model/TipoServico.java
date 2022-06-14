@@ -1,17 +1,15 @@
 package Model;
 
-public class TipoServico {
-    private String nome;
+public enum TipoServico {
+    MANUTENCAO("Manutenção"), PREPARACAO("Preparação");
 
-    public TipoServico(String nome) {
+    private final String nome;
+
+    TipoServico(String nome) {
         this.nome = nome;
     }
 
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 }

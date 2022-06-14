@@ -1,17 +1,15 @@
 package Model;
 
-public class TipoEspaco {
-    private String nome;
+public enum TipoEspaco {
+    RELVADO("Relvado"), CANTEIROS("Canteiros"), MISTO("Misto");
 
-    public TipoEspaco(String nome) {
+    private final String nome;
+
+    TipoEspaco(String nome) {
         this.nome = nome;
     }
 
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 }
